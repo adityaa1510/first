@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+  } else {
+    image.src = "https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+  }
+}
+</script>
+
+</body>
+</html>
